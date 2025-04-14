@@ -13,6 +13,8 @@ programa {
       total = ((entrada - saida)*-1)+24
       escreva("Você trabalhou ", total, " horas.")
       //esse +24 significa que virou o dia
+    } senao {
+      escreva("Você trabalhou 24 horas.")
     }
   }
 }
