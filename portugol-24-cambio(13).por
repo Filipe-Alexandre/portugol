@@ -10,17 +10,17 @@ programa {
       caso 1: 
         escreva("Dólar\n")
         conversao = valor / 5
-        escreva(conversao)
+        escreva("US$", conversao)
         pare
       caso 2: 
         escreva("Euro\n")
         conversao = valor / 6
-        escreva(conversao)
+        escreva("€", conversao)
         pare
       caso 3: 
         escreva("Peso Argentino\n")
         conversao = valor / 0.02
-        escreva(conversao)
+        escreva("$", conversao)
         pare
       caso contrario:
         escreva("Opção inválida")
