@@ -25,7 +25,7 @@ programa {
         escreva(resultado)
         pare  
       caso "/":
-      se((num2 < 0) ou(num2 > 0)) {
+      se((num2 != 0)) {
         resultado = num1 / num2
         escreva(resultado)
       } senao {

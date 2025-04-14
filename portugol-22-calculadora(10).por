@@ -10,7 +10,6 @@ programa {
     escreva("Segundo número:\n")
     leia(num2)
 
-
     se(operador == '+') {
       resultado = num1 + num2
         escreva("------\n", resultado)
@@ -21,9 +20,13 @@ programa {
       resultado = num1 * num2
         escreva("------\n", resultado)
     } senao se (operador == '/') {
-      resultado = num1 / num2
+      se((num2 != 0)) {
+        resultado = num1 / num2
         escreva("------\n", resultado)
-    } senao se((operador != '+') ou (operador != '-') ou (operador != '*') ou (operador != '/')){
+      } senao {
+        escreva("ERRO: Divisão por 0")
+      }
+    } senao {
       escreva("Operação inválida")
     }
   }
