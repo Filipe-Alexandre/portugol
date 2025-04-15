@@ -5,7 +5,9 @@ programa {
     escreva("informe sua nota:\n")
     leia(nota)
 
-    se ((nota >= 9)) {
+    se ((nota > 10) ou (nota < 0)){
+      escreva("Nota inválida")
+    } senao se ((nota >= 9)) {
       escreva("A")
     } senao se (nota >= 7) {
       escreva("B")
@@ -15,9 +17,6 @@ programa {
       escreva("D")
     } senao se (nota <= 4.9) {
       escreva("E")
-    } senao {
-      escreva("Nota inválida")
     }
-
   }
 }
