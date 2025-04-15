@@ -15,6 +15,8 @@ programa {
       escreva("D")
     } senao se (nota <= 4.9) {
       escreva("E")
+    } senao {
+      escreva("Nota inválida")
     }
 
   }
