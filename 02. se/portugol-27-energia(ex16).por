@@ -1,5 +1,4 @@
 programa {
-  inclua biblioteca Matematica
   funcao inicio() {
 
     real kwh, valor
@@ -14,7 +13,7 @@ programa {
       escreva("O Valor da sua conta de luz é de: R$", valor, "\n[Tarifa: AMARELA]")
     } senao se (kwh > 200) {
       valor = kwh * 1
-      escreva("O Valor da sua conta de luz é de: R$", Matematica.arredondar(valor,2), "\n[Tarifa: VERMELHA]")
+      escreva("O Valor da sua conta de luz é de: R$", valor, "\n[Tarifa: VERMELHA]")
     }
   }
 }
