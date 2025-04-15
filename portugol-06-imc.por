@@ -6,6 +6,6 @@ programa {
       leia(altura)
 
       pesoIdeal = (72.2 * altura) - 58
-      escreva("O seu peso ideal é de: \n", Matematica.arredondar(pesoIdeal),"kg")
+      escreva("O seu peso ideal é de: \n", Matematica.arredondar(pesoIdeal,2),"kg")
   }
 }
