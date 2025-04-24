@@ -4,7 +4,7 @@ programa {
     para(i=1; i<=100; i++) {
 
       soma = i + soma
+      escreva(soma, " + ", i, " = ", soma, "\n")
     }
-      escreva(soma) 
   }
 }
