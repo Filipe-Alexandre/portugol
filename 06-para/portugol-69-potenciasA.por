@@ -2,7 +2,7 @@ programa {
   // Mostre as potências de 2, de 2⁰ até 2¹⁰.
   funcao inicio() {
     inteiro i, resultado = 1
-  escreva("Escreva um número para saber o resultado de sua potencia de 0 a 10:\n")
+  escreva("Potências de 2, de 2⁰ até 2¹⁰.:\n")
   // leia(base)
     para(i = 0; i <= 10; i++) {
       resultado = potencia(2,i)
