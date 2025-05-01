@@ -15,6 +15,6 @@ programa {
         posicao[i] = ""
       }
   }
-  escreva("\nO número 10 foi encontrado nas posições: [",posicao,"]\n")
+  escreva("\nO número 10 foi encontrado nas posições: [",posicao,"]\n") 
 }
 }
