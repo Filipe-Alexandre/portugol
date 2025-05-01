@@ -5,6 +5,7 @@ programa {
     escreva("Armazene 7 valores e saiba qual é o menor:\n")
     
     para(i = 0; i<7 ;i++) {
+      escreva("Digite o ",i+1,"º Número: ")
       leia(vetor[i])
     }
     // vai ler todas as posições
