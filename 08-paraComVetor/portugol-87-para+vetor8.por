@@ -1,5 +1,7 @@
 programa {
-  inteiro vetor[6], i, posicao
+  inclua biblioteca Tipos --> tp
+  inteiro vetor[6], i
+  cadeia posicao[6]
 
   funcao inicio() {
     escreva("verificação do nº 10:\n")
@@ -8,12 +10,11 @@ programa {
       leia(vetor[i])
 
       se(vetor[i] == 10){
-        posicao = i
+        posicao[i] = tp.inteiro_para_cadeia(i,10)
+      } senao se(vetor[i]!=10) {
+        posicao[i] = ""
       }
-    }
-
-    escreva("O número 10 foi encontrado na posição: ", posicao)
-
-
   }
+  escreva("\nO número 10 foi encontrado nas posições: [",posicao,"]\n")
+}
 }
