@@ -12,6 +12,6 @@ programa {
         vetor[i] = 0
       }
     }
-    escreva(vetor)
+    escreva("Vetor após  as substituições:\n",vetor)
   }
 }
