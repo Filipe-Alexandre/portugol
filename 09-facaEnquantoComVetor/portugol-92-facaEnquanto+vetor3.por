@@ -7,8 +7,6 @@ programa {
   inteiro i = 0, tamanho = u.numero_elementos(nomes)
 
   funcao inicio() {
-
- 
     escreva("Insira o nome e a média dos alunos.\n")
 
     faca {
