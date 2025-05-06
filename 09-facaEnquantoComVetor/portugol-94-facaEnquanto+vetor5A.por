@@ -1,8 +1,7 @@
 programa {
   inclua biblioteca Matematica --> m
   inclua biblioteca Util --> u
-  real valor[999], soma = 0
-  inteiro i = 0, tamanho = u.numero_elementos(valor)
+  real valor, soma = 0
   logico fim = falso
 
   funcao inicio() {
@@ -10,15 +9,16 @@ programa {
 
     faca{
       escreva(i+1,"ª Venda: ")
-      leia(valor[i])
-      soma += valor[i]
-      se(valor[i] <= 0) {
+      leia(valor)
+      soma += valor
+      se(valor <= 0) {
         fim = verdadeiro
       }
-      i++
     } enquanto (fim == falso)
 
     escreva("As vendas totais do dia foram de R$",m.arredondar(soma,2))
     
   }
 }
+
+// para fazer com vetor, seria apenas transformar a variavel valor como um vetor
