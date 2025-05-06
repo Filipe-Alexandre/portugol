@@ -22,7 +22,7 @@ programa {
     escreva("\n-----------------------\nMedia da Turma\n-----------------------\n")
     i = 0
     faca {
-      soma = nota[i]+soma
+      soma += nota[i]
       i++
     } enquanto(i < tamanho)
     media = soma/tamanho
