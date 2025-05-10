@@ -4,21 +4,21 @@ programa {
   funcao inicio() {
     escreva("Quantos assentos você deseja reservar?\n")
     leia(quantidade)
-    se(quantidade>12) {
-      escreva("Quantidade indisponivel. Escolha até 12 assentos\n")
+    se(quantidade>12 ou quantidade<1) {
+      escreva("Quantidade inválida. Escolha até 12 assentos\n")
       leia(quantidade)
     }
 
     para(inteiro i = 0; i< quantidade; i++) {
       escreva("Qual Linha deseja para o ",i+1,"º assento? (0 a 2)\n")
       leia(l)
-      se(l>2) {
+      se(l>2 ou l<0) {
         escreva("Assento indisponível! Escolha outro\n")
         leia(l)
       }
       escreva("E qual Coluna deseja para o ",i+1,"º assento? (0 a 3)\n")
       leia(c)
-      se(c>3){
+      se(c>3 ou c<0){
         escreva("Assento indisponível! Escolha outro\n")
         leia(c)
       }
